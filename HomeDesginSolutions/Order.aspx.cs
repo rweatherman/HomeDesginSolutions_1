@@ -25,7 +25,7 @@ namespace HomeDesginSolutions
        protected void ShowInv_Click(Object sender, EventArgs e)
         {
             Button clicked = (Button)sender;
-            string dbConnectionString = ConfigurationManager.ConnectionStrings["LocalDB"].ConnectionString;
+            string dbConnectionString = ConfigurationManager.ConnectionStrings["SportsTrendsEntities"].ConnectionString;
 
             var queryString = "SELECT * FROM HdsInventory";
             var dbConnection = new SqlConnection(dbConnectionString);
